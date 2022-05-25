@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">QUIZAPP</string>
+    <string name="welcome_to_java_quiz">WELCOME TO JAVA QUIZ</string>
+    <string name="JAVAIMG">TODO</string>
+    <string name="Question">In java strings are immutable?</string>
+    <string name="no">NO</string>
+    <string name="yes">YES</string>
+    <string name="your_score">Your Score</string>
+    <string name="totalscore">TotalScore</string>
+</resources>
