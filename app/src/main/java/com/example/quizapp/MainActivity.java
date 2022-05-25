@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.quizapp.databinding.ActivityMainBinding;
 
@@ -29,7 +30,9 @@ public class MainActivity extends AppCompatActivity {
                 if (answers[index]) {
                     score += 5;
                     binding.textView3.setText(score + "");
-                    // Toast.makeText(getApplicationContext(), "TRUE", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),
+                            "Correct AnsWer",
+                            Toast.LENGTH_SHORT).show();
 
                 }
                 if (index == Questions.length - 1) {
@@ -45,7 +48,9 @@ public class MainActivity extends AppCompatActivity {
                 if (!answers[index]) {
                     score += 5;
                     binding.textView3.setText(score + "");
-                    //Toast.makeText(getApplicationContext(), "False", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),
+                            "Correct AnsWer",
+                            Toast.LENGTH_SHORT).show();
                 }
                 if (index + 1 == Questions.length) {
                     binding.textView3.setText(score + "");
